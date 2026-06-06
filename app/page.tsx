@@ -265,14 +265,18 @@ function HeroSection() {
       id="start"
       className="relative min-h-[100svh] overflow-hidden bg-[#2b2016] pt-24 text-white"
     >
-      <Image
-        src="/images/tarttoria/pizza-wide.png"
-        alt="Pizza Tarttorii z pomidorami, mozzarellą i bazylią"
-        fill
-        priority
-        className="absolute inset-0 object-cover"
-        sizes="100vw"
-      />
+      <video
+        className="absolute inset-0 h-full w-full object-cover"
+        autoPlay
+        muted
+        loop
+        playsInline
+        preload="auto"
+        poster="/images/tarttoria/pizza-wide.png"
+        aria-hidden="true"
+      >
+        <source src="/video_hero.mp4" type="video/mp4" />
+      </video>
       <div className="absolute inset-0 bg-[#20150d]/62" />
       <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(22,12,5,0.80)_0%,rgba(22,12,5,0.60)_44%,rgba(70,42,18,0.22)_100%)]" />
       <div className="absolute inset-x-0 bottom-0 h-32 bg-[linear-gradient(180deg,rgba(251,244,233,0)_0%,rgba(251,244,233,0.12)_100%)]" />
